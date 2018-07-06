@@ -20,3 +20,6 @@ Step by step descriptive logic to find prime factors.
 * You may think why loop from 2 to num/2? Because prime number starts from 2 and any factor of a number n is always less than n/2.
 3. Inside the loop, first check if i is a factor of num or not. If it is a factor then check it is prime or not.
 * Print the value of i if it is prime and a factor of num.
+
+### Example of program work
+![Example](https://github.com/SVS97/02-P-Dev_Tools-/blob/master/Screenshot.png "Screenshot")
