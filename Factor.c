@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 
 	/* Find all Prime factors */
 	for (i = 1; i <= num; i++)
-    {
+        {
        	 /* Check 'i' for factor of num */
 	    if(0 == num % i) {
             /* Check 'i' for Prime */
@@ -62,8 +62,8 @@ int main(int argc, char *argv[])
             if(Prime == 1) {
                 printf("%d ", i);
             }
+            }
         }
-    }
     		
 	/* Stop searching */
     clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &time_after);
