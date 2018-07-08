@@ -59,9 +59,9 @@ int main(int argc, char *argv[])
             }
 
            	/* If 'i' is Prime number and factor of num */
-            if(Prime == 1) {
-                printf("%d ", i);
-            }
+                if(Prime == 1) {
+                    printf("%d ", i);
+                }
             }
         }
     		
