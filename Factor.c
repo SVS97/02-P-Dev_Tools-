@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
                 printf("%d ", i);
             }
         }
-     }
+    }
     		
 	/* Stop searching */
     clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &time_after);
