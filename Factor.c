@@ -47,8 +47,7 @@ int main(int argc, char *argv[])
 	for (i = 1; i <= num; i++)
     {
        	 /* Check 'i' for factor of num */
-	    if(0 == num % i)
-       	{
+	    if(0 == num % i) {
             /* Check 'i' for Prime */
             Prime = 1;
             for (j = 2; j <= i/2; j++)
@@ -58,11 +57,10 @@ int main(int argc, char *argv[])
                     Prime = 0;
                    	break;
                 }
-             }
+            }
 
            	/* If 'i' is Prime number and factor of num */
-            if(Prime == 1)
-           	{
+            if(Prime == 1) {
                 printf("%d ", i);
            	}
         }
