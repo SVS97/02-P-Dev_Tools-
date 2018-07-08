@@ -52,8 +52,7 @@ int main(int argc, char *argv[])
             Prime = 1;
             for (j = 2; j <= i/2; j++)
             {
-                if(i%j == 0)
-               	{
+                if(i%j == 0) {
                     Prime = 0;
                    	break;
                 }
@@ -62,7 +61,7 @@ int main(int argc, char *argv[])
            	/* If 'i' is Prime number and factor of num */
             if(Prime == 1) {
                 printf("%d ", i);
-           	}
+            }
         }
      }
     		
