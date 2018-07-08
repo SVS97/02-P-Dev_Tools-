@@ -24,20 +24,17 @@ double timespec_diff(struct timespec *stop, struct timespec *start)
 
 int main(int argc, char *argv[])
 {
-	int i, j, num, isPrime;
+	int i, j, num, Prime;
 	struct timespec time_now, time_after;
 	
 	/* Parse arguments */
-	if (argc < 2)
-		{
+	if (argc < 2)  {
 	 		goto exc_noargs;
 		}
-	if (argc == 2) 
-		{
+	if (argc == 2) {
 			num = atol(argv[1]);
 		}
-	if (argc > 2)
-		{
+	if (argc > 2)  {
 			goto exc_argtoomuch;
 		}
 	
@@ -50,21 +47,21 @@ int main(int argc, char *argv[])
 	for (i = 1; i <= num; i++)
     {
        	 /* Check 'i' for factor of num */
-	    if(num%i==0)
+	    if(0 == num % i)
        	{
             /* Check 'i' for Prime */
-            isPrime = 1;
+            Prime = 1;
             for (j = 2; j <= i/2; j++)
            	{
                 if(i%j == 0)
                	{
-                    isPrime = 0;
+                    Prime = 0;
                    	break;
                 }
              }
 
            	/* If 'i' is Prime number and factor of num */
-            if(isPrime == 1)
+            if(Prime == 1)
            	{
                 printf("%d ", i);
            	}
@@ -80,15 +77,15 @@ int main(int argc, char *argv[])
 	/* Print measured sorting time */
 	printf("Searching Prime Factors of %d took %g ms\n", 
 	       num, timespec_diff(&time_after, &time_now));
-	return 0;
+	exit(0);
 
 	/* Exception handling */
 	exc_noargs:
 	printf("Error: no arguments provided\n");
-	return 1;
+	exit(1);
 
 	exc_argtoomuch:
 	printf("Error: too much arguments\n");
-	return 1;
+	exit(1);
 	
 }
