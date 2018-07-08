@@ -30,13 +30,13 @@ int main(int argc, char *argv[])
 	/* Parse arguments */
 	if (argc < 2)  {
 	 		goto exc_noargs;
-		}
+	}
 	if (argc == 2) {
 			num = atol(argv[1]);
-		}
+	}
 	if (argc > 2)  {
 			goto exc_argtoomuch;
-		}
+	}
 	
 	printf("All Prime Factors of %d are: \n", num);
 	
